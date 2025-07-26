@@ -284,17 +284,43 @@
       font-weight: 600;
     }
 
-    /* --- Screenshots (optional placeholder) --- */
+    /* --- Screenshots --- */
     .screens {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: .75rem;
+      gap: 1.5rem;
+    }
+    .screenshot-frame {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0, 120, 255, 0.2);
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0, 120, 255, 0.15);
+    }
+    .screenshot-frame:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0, 120, 255, 0.3);
+    }
+    .screenshot-frame::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      padding: 2px;
+      background: linear-gradient(135deg, rgba(0,120,255,0.4), rgba(0,120,255,0.1));
+      -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      pointer-events: none;
     }
     .screens img {
       width: 100%;
-      border-radius: 12px;
-      border: 1px solid var(--border);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      height: auto;
+      display: block;
+      border-radius: 14px;
     }
 
     /* --- Accordion (FAQ / Changelog) --- */
@@ -562,10 +588,18 @@
     <div class="container">
       <h2 class="features-title reveal">A quick look</h2>
       <div class="screens">
-        <img class="reveal" src="https://i.ibb.co/v4W77n3Q/home.jpg" alt="Dashboard">
-        <img class="reveal" src="https://i.ibb.co/rR95P9tb/homework.jpg" alt="Homework">
-        <img class="reveal" src="https://i.ibb.co/ymCtr8fH/books.jpg" alt="Books">
-        <img class="reveal" src="https://i.ibb.co/dJcDJQW2/notification.jpg" alt="Notifications">
+        <div class="screenshot-frame reveal">
+          <img src="https://i.ibb.co/v4W77n3Q/home.jpg" alt="Dashboard">
+        </div>
+        <div class="screenshot-frame reveal">
+          <img src="https://i.ibb.co/rR95P9tb/homework.jpg" alt="Homework">
+        </div>
+        <div class="screenshot-frame reveal">
+          <img src="https://i.ibb.co/ymCtr8fH/books.jpg" alt="Books">
+        </div>
+        <div class="screenshot-frame reveal">
+          <img src="https://i.ibb.co/dJcDJQW2/notification.jpg" alt="Notifications">
+        </div>
       </div>
     </div>
   </section>
