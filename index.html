@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ScoreX – Download APK</title>
+  <style>
+    :root {
+      --main-color: #0078ff;
+      --light-bg: #f9f9f9;
+      --text-color: #222;
+      --btn-radius: 8px;
+      --max-width: 420px;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--light-bg);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: #fff;
+      width: 90%;
+      max-width: var(--max-width);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .logo {
+      width: 96px;
+      height: 96px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 1rem;
+    }
+
+    .title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--text-color);
+      margin-bottom: 0.4rem;
+    }
+
+    .desc {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 0.85rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: var(--btn-radius);
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn.download {
+      background: var(--main-color);
+      color: #fff;
+    }
+
+    .btn.download:hover {
+      background: #0061cc;
+    }
+
+    .btn.copy {
+      background: #f0f0f0;
+      color: #333;
+      border: 1px solid #ccc;
+    }
+
+    .btn.copy:hover {
+      background: #e2e2e2;
+    }
+
+    .footer {
+      font-size: 0.8rem;
+      color: #999;
+      margin-top: 1rem;
+    }
+
+    .footer a {
+      color: var(--main-color);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.ibb.co/pvhwhCXk/Chat-GPT-Image-Jul-25-2025-11-12-11-PM.png" alt="ScoreX Logo" class="logo" />
+    <div class="title">ScoreX</div>
+    <div class="desc">
+      Download and install the official ScoreX Android APK.
+    </div>
+
+    <a href="https://gonativeio-apps.s3.us-east-1.amazonaws.com/static/6881d025e02206782642853e/app-release.apk?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAYMYFO3A75OQPINCL%2F20250726%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250726T074443Z&X-Amz-Expires=600&X-Amz-Signature=d5239a9bc855c1f4da92fc410e9184319be991fdc390fa90811743fa28c4a398&X-Amz-SignedHeaders=host&versionId=9gg.JWoMdQ4T_QbvVBlA3x6QGgagW.y1&x-id=GetObject"
+       class="btn download" download>
+      Download Android APK
+    </a>
+
+    <button class="btn copy" onclick="copyLink()">Copy Download Link</button>
+
+    <div class="footer">
+      After downloading, open the APK and accept all prompts.<br>
+      Learn more in our <a href="https://developer.android.com/studio/publish" target="_blank">documentation</a>.
+    </div>
+  </div>
+
+  <script>
+    function copyLink() {
+      const link = "https://gonativeio-apps.s3.us-east-1.amazonaws.com/static/6881d025e02206782642853e/app-release.apk?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAYMYFO3A75OQPINCL%2F20250726%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250726T074443Z&X-Amz-Expires=600&X-Amz-Signature=d5239a9bc855c1f4da92fc410e9184319be991fdc390fa90811743fa28c4a398&X-Amz-SignedHeaders=host&versionId=9gg.JWoMdQ4T_QbvVBlA3x6QGgagW.y1&x-id=GetObject";
+      navigator.clipboard.writeText(link)
+        .then(() => alert("✅ Download link copied!"))
+        .catch(() => alert("❌ Failed to copy link"));
+    }
+  </script>
+</body>
+</html>
