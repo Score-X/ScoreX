@@ -2,7 +2,7 @@
 <html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <title>PM SHREE BHS – Download APK</title>
 
   <!-- Fonts & Icons -->
@@ -49,10 +49,9 @@
       background: var(--bg);
       color: var(--text);
       scroll-behavior: smooth;
+      overflow-x: hidden;
+      -webkit-text-size-adjust: 100%;
       touch-action: pan-y;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      user-select: none;
     }
 
     a { color: var(--primary); text-decoration: none; }
@@ -875,10 +874,6 @@
       e.preventDefault();
     });
     
-    document.addEventListener('touchmove', function(e) {
-      if(e.scale !== 1) { e.preventDefault(); }
-    }, { passive: false });
-
     // ----------- Accordion logic -----------
     document.querySelectorAll('.accordion').forEach(acc => {
       acc.querySelectorAll('.accordion-item').forEach(item => {
