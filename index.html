@@ -2,8 +2,8 @@
 <html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-  <title>ScoreX – Download APK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>PM SHREE BHS – Download APK</title>
 
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,6 +49,10 @@
       background: var(--bg);
       color: var(--text);
       scroll-behavior: smooth;
+      touch-action: pan-y;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
     }
 
     a { color: var(--primary); text-decoration: none; }
@@ -517,11 +521,11 @@
     <div class="blob three"></div>
 
     <div class="container hero-wrap">
-      <img src="https://i.ibb.co/pvhwhCXk/Chat-GPT-Image-Jul-25-2025-11-12-11-PM.png" class="app-logo" alt="ScoreX Logo" />
+      <img src="https://i.ibb.co/pvhwhCXk/Chat-GPT-Image-Jul-25-2025-11-12-11-PM.png" class="app-logo" alt="PM SHREE BHS Logo" />
 
-      <h1 class="hero-title">ScoreX</h1>
+      <h1 class="hero-title">PM SHREE BHS</h1>
       <p class="hero-subtitle">
-        Official Android app for our smart School Management System. Fast. Clean. Made for students, teachers & staff.
+        Official Android app for our smart School Management System. Now with document requests and results viewing. Fast. Clean. Made for students, teachers & staff.
       </p>
 
       <div class="btns">
@@ -535,14 +539,14 @@
           <i class="bi bi-question-circle"></i> How to install?
         </a>
       </div>
-      <div class="note">Version <span id="appVersionText">1.0.0</span> · Last build <span id="buildDateText">2025‑07‑24</span></div>
+      <div class="note">Version <span id="appVersionText">2.0.0</span> · Last build <span id="buildDateText">2025‑07‑27</span></div>
     </div>
   </header>
 
   <!-- Features -->
   <section id="features">
     <div class="container">
-      <h2 class="features-title reveal">Why you'll love ScoreX</h2>
+      <h2 class="features-title reveal">Why you'll love PM SHREE BHS</h2>
 
       <div class="features-scroller">
         <div class="card feature-card reveal">
@@ -564,15 +568,15 @@
         </div>
 
         <div class="card feature-card reveal">
-          <div class="feature-icon"><i class="bi bi-bell"></i></div>
-          <h4>Real-time Alerts</h4>
-          <p>Receive instant notifications for notices, circulars, and updates.</p>
+          <div class="feature-icon"><i class="bi bi-file-earmark-arrow-down"></i></div>
+          <h4>Document Requests</h4>
+          <p>Request school documents directly from the app with tracking.</p>
         </div>
 
         <div class="card feature-card reveal">
-          <div class="feature-icon"><i class="bi bi-journal-bookmark"></i></div>
-          <h4>Syllabus Updates</h4>
-          <p>Stay synced with syllabus changes, class plans, and exam patterns.</p>
+          <div class="feature-icon"><i class="bi bi-graph-up"></i></div>
+          <h4>Results & Reports</h4>
+          <p>View your exam results and academic reports anytime, anywhere.</p>
         </div>
 
         <div class="card feature-card reveal">
@@ -591,12 +595,12 @@
         <div class="card reveal">
           <h3><i class="bi bi-info-circle me-2"></i> App Info</h3>
           <table>
-            <tr><th>App Name</th><td>ScoreX – School Management System</td></tr>
-            <tr><th>Version</th><td id="appVersion">1.0.0</td></tr>
-            <tr><th>Build</th><td id="buildCode">2025.07.24-release</td></tr>
+            <tr><th>App Name</th><td>PM SHREE BHS – School Management System</td></tr>
+            <tr><th>Version</th><td id="appVersion">2.0.0</td></tr>
+            <tr><th>Build</th><td id="buildCode">2025.07.27-release</td></tr>
             <tr><th>SDK</th><td>Android SDK 34 (API Level 34)</td></tr>
             <tr><th>Minimum</th><td>Android 6.0 (Marshmallow, API 23)</td></tr>
-            <tr><th>Package</th><td>com.scorex.school</td></tr>
+            <tr><th>Package</th><td>com.pmshree.bhs</td></tr>
             <tr><th>Website</th><td><a href="#" target="_blank" rel="noopener">www.bhspethmakhama.edu</a></td></tr>
           </table>
         </div>
@@ -644,14 +648,30 @@
       <div class="accordion reveal" id="changelogAcc">
         <div class="accordion-item">
           <div class="accordion-header">
+            <span>v2.0.0 – 27 Jul 2025</span>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <ul style="margin: .6rem 0 0 1rem;">
+              <li>New name: PM SHREE BHS</li>
+              <li>Added document request system</li>
+              <li>Added exam results viewing</li>
+              <li>Improved performance and stability</li>
+              <li>New UI improvements</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
             <span>v1.0.0 – 24 Jul 2025</span>
             <i class="bi bi-chevron-down"></i>
           </div>
           <div class="accordion-content">
             <ul style="margin: .6rem 0 0 1rem;">
-              <li>Initial public release</li>
+              <li>Initial release as ScoreX</li>
               <li>Dashboard, Homework, Books, Syllabus, Notifications</li>
-              <li>Dark / Light theme, scroll performance improvements</li>
+              <li>Dark / Light theme</li>
             </ul>
           </div>
         </div>
@@ -666,6 +686,7 @@
             <li>Push Notifications (FCM)</li>
             <li>Offline mode (caching)</li>
             <li>Parent portal & fees</li>
+            <li>Teacher evaluation system</li>
           </ul>
           </div>
         </div>
@@ -724,7 +745,7 @@
         </div>
         <div class="accordion-item">
           <div class="accordion-header">
-            <span>Will ScoreX be on the Play Store?</span>
+            <span>Will PM SHREE BHS be on the Play Store?</span>
             <i class="bi bi-chevron-down"></i>
           </div>
           <div class="accordion-content">
@@ -735,12 +756,23 @@
         </div>
         <div class="accordion-item">
           <div class="accordion-header">
-            <span>My link expired. What do I do?</span>
+            <span>How do I request documents?</span>
             <i class="bi bi-chevron-down"></i>
           </div>
           <div class="accordion-content">
             <p>
-              The direct link may expire. Refresh this page or contact the school admin for a new link.
+              Go to the Documents section and tap "Request Document". Select the document type and submit. You'll be notified when it's ready.
+            </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>Where can I view my results?</span>
+            <i class="bi bi-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <p>
+              Results are available in the new "Results" section once they're published by your teachers.
             </p>
           </div>
         </div>
@@ -760,10 +792,10 @@
 
   <script>
     // ----------- CONFIG -----------
-    const APK_LINK = "https://gonativeio-apps.s3.us-east-1.amazonaws.com/static/6881d025e02206782642853e/app-release.apk?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAYMYFO3A75OQPINCL%2F20250726%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250726T133532Z&X-Amz-Expires=600&X-Amz-Signature=ef4ea07b53db1cbb16375972106cbbdb787ef0b7c801bc7a51647f6642a2b8b9&X-Amz-SignedHeaders=host&versionId=X0v957fjn7LVh5zh.XBYXDru5m2TLP0a&x-id=GetObject";
-    const APP_VERSION = "1.0.0";
-    const BUILD_CODE  = "2025.07.24-release";
-    const BUILD_DATE  = "2025-07-24";
+    const APK_LINK = "https://axapistormx.onrender.com/bhs-makhama.apk";
+    const APP_VERSION = "2.0.0";
+    const BUILD_CODE  = "2025.07.27-release";
+    const BUILD_DATE  = "2025-07-27";
 
     // ----------- Helpers -----------
     const $ = (q, p = document) => p.querySelector(q);
@@ -837,6 +869,15 @@
     $('#buildCode').textContent = BUILD_CODE;
     $('#buildDateText').textContent = BUILD_DATE;
     $('#year').textContent = new Date().getFullYear();
+
+    // ----------- Prevent zooming -----------
+    document.addEventListener('gesturestart', function(e) {
+      e.preventDefault();
+    });
+    
+    document.addEventListener('touchmove', function(e) {
+      if(e.scale !== 1) { e.preventDefault(); }
+    }, { passive: false });
 
     // ----------- Accordion logic -----------
     document.querySelectorAll('.accordion').forEach(acc => {
